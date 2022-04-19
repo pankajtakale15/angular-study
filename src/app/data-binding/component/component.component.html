@@ -1,0 +1,14 @@
+<h3 style="text-align: center;">This is Data Binding</h3>
+
+<h4>1) One way data binding</h4>
+<p [className]="isred ? redClass : ''" [innerHtml]="message"></p>
+
+<ul>
+    <li *ngFor="let item of names">Interpolation - Is user 18+? {{item.age > 18 ? 'Yes' : 'No'}}</li>
+    <li [style]="style">Property Binding -  </li>
+</ul>
+
+<input type="text" [(ngModel)]="twoWayBinding"/>
+
+
+<button (click)="showAlert()">Submit</button>
